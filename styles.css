@@ -1,0 +1,225 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(105, 55, 155);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	color: #000000;
+	font-weight: 700;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+
+}
+#navbar{
+  height: 50px;
+  position: fixed;
+  background-color: rgb(200, 100, 200);
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  top: 0%;
+}
+
+ul{
+  display: flex;
+  width: 300px;
+  margin-left: 5%;
+  justify-content: space-evenly;
+  margin-top: 0;
+  
+}
+
+.navlink{
+  margin: 0;
+  padding-top: 15px;
+  height: 35px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  color: gold;
+  transition-property: color, background-color, border-radius;
+  transition-timing-function: linear;
+  transition-duration: 100ms;
+  scroll-behavior: smooth;
+}
+
+.navlink:hover{
+  background-color: white;
+  color: red;
+}
+
+.navlink:nth-of-type(1):hover{
+  border-radius: 15px 0 0 15px;
+}
+
+.navlink:nth-of-type(3):hover{
+  border-radius: 0 15px 15px 0;
+}
+
+.navlink:active{
+  background-color: black;
+  color: white;
+}
+
+.navlink:nth-of-type(1):active{
+  border-radius: 15px 0 0 15px;
+}
+
+.navlink:nth-of-type(3):active{
+  border-radius: 0 15px 15px 0;
+}
+
+#welcome-section{
+  height: 980px;
+  background-color: rgb(155, 127, 175);
+  padding-top: 50px;
+}
+
+h1{
+  background-color: rgb(125, 77, 175);
+  width: 700px;
+  height: 65px;
+  padding-top:35px;
+  margin: 100px auto auto auto;
+  text-align: center;
+  border-radius: 25px;
+  transition-property: background-color, color;
+  transition: box-shadow 200ms linear;
+}
+
+h1:hover{
+  box-shadow: 0px 0px 20px white;
+  background-color: rgb(146, 89, 206);
+  color: white;
+  
+}
+
+#my-desc{
+  width: 50%;
+  background-color: rgb(125, 77, 175);
+  text-align: center;
+  margin: 200px auto 0 auto; 
+  padding: 15px;
+  border-radius: 25px;
+  transition-property: background-color, color;
+  transition: box-shadow 200ms linear;
+}
+
+#my-desc:hover{
+  box-shadow: 0px 0px 20px white;
+  background-color: rgb(146, 89, 206);
+  color: white;
+}
+
+/*projects*/
+
+#projects{
+  padding-top: 50px;
+  height: 980px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#tiles{
+  width:1100px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.project-tile{
+  width: 255px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  margin-left: 15px;
+}
+
+.project-link{
+  text-align: center;
+  text-decoration: none;
+}
+
+
+/*contact info*/
+
+#contact-info{
+  padding-top: 50px;
+  background-color: rgb(155, 127, 175);
+  padding-bottom: 7.5%;
+}
+
+.profiles{
+  display: flex;
+  width: 90%;
+  background-color: rgb(105, 77, 125);
+  height: 500px;
+  margin: auto;
+  justify-content: space-evenly;
+  
+}
+
+.link-div{
+  border-radius: 20px;
+  width: 40%;
+  background-color: rgb(145, 127, 165);
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.link-div:nth-of-type(4){
+  margin-right: 5%;
+}
+
+.link{
+  top: 0%;
+}
+
+.logo-img{
+  max-width: 75%;
+  margin: 0 ;
+}
+
+.img-name{
+  color: gold;
+}
+
+@media (max-width: 1100px){
+  #projects{
+    height: 0px;
+  }
+  #tiles{
+    width: 300px;
+    height: 1100px;
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 900px){
+  #tiles{
+    width: 300px;
+    height: 1100px;
+    flex-direction: column;
+  }
+}
